@@ -78,68 +78,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-lg-12"
-  }, _vm._l((_vm.items), function(item, index) {
+    staticClass: "col-xs-12"
+  }, [_c('div', {
+    staticClass: "item"
+  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.items), function(item, index) {
     return _c('div', {
-      staticClass: "item"
-    }, [(item.parcel) ? _c('div', {
-      staticClass: "row location"
-    }, [_c('div', {
-      staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
-    }, [_c('div', {
-      staticClass: "input-group mb-10"
-    }, [_vm._m(0, true), _vm._v(" "), _c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (item.parcelCode1),
-        expression: "item.parcelCode1"
-      }],
-      staticClass: "form-control",
-      attrs: {
-        "type": "text",
-        "aria-label": "...",
-        "placeholder": "Zip code, Address",
-        "required": "",
-        "pattern": "[0-9]"
-      },
-      domProps: {
-        "value": (item.parcelCode1)
-      },
-      on: {
-        "input": function($event) {
-          if ($event.target.composing) { return; }
-          item.parcelCode1 = $event.target.value
-        }
-      }
-    })])]), _vm._v(" "), _c('div', {
-      staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
-    }, [_c('div', {
-      staticClass: "input-group mb-10"
-    }, [_vm._m(1, true), _vm._v(" "), _c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (item.parcelCode2),
-        expression: "item.parcelCode2"
-      }],
-      staticClass: "form-control",
-      attrs: {
-        "type": "text",
-        "aria-label": "...",
-        "placeholder": "Zip code, Address"
-      },
-      domProps: {
-        "value": (item.parcelCode2)
-      },
-      on: {
-        "input": function($event) {
-          if ($event.target.composing) { return; }
-          item.parcelCode2 = $event.target.value
-        }
-      }
-    })])])]) : _vm._e(), _vm._v(" "), _c('div', {
-      staticClass: "row flex-align"
+      staticClass: "row flex-align type"
     }, [_c('div', {
       staticClass: "col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-10"
     }, [_c('bootstrap-toggle', {
@@ -392,8 +336,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       attrs: {
         "id": "basic-addon2"
       }
-    }, [_vm._v("Kg")])])])])]) : _vm._e()])])
-  })), _vm._v(" "), _c('div', {
+    }, [_vm._v("Kg")])])])])]) : _vm._e()])
+  })], 2)]), _vm._v(" "), _c('div', {
     staticClass: "col-xs-12 controls"
   }, [_c('div', {
     staticClass: "left"
@@ -401,7 +345,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "btn-primary btn mb-10",
     on: {
       "click": function($event) {
-        _vm.removeItem(_vm.index)
+        _vm.removeItem()
       }
     }
   }, [_vm._v("- Remove")]), _vm._v(" "), _c('button', {
@@ -422,6 +366,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: "row location"
+  }, [_c('div', {
+    staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+  }, [_c('div', {
+    staticClass: "input-group mb-10"
+  }, [_c('div', {
     staticClass: "input-group-btn"
   }, [_c('button', {
     staticClass: "btn btn-info dropdown-toggle",
@@ -447,9 +397,18 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("GB")])])])])
-},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v("GB")])])])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "aria-label": "...",
+      "placeholder": "Zip code, Address"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+  }, [_c('div', {
+    staticClass: "input-group mb-10"
+  }, [_c('div', {
     staticClass: "input-group-btn"
   }, [_c('button', {
     staticClass: "btn btn-info dropdown-toggle",
@@ -475,7 +434,14 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("GB")])])])])
+  }, [_vm._v("GB")])])])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "aria-label": "...",
+      "placeholder": "Zip code, Address"
+    }
+  })])])])
 }]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -621,8 +587,6 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 //
 //
 //
-//
-//
 
 
 
@@ -636,8 +600,8 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
         addItem() {
             this.items.push({ parcel: false });
         },
-        removeItem(index) {
-            this.items.splice(index, 1);
+        removeItem() {
+            this.items.pop();
         },
         sendData() {
             console.log(this.items);
@@ -649,4 +613,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.603571811cefc63edf1e.js.map
+//# sourceMappingURL=app.b2288683b1f5363e97c9.js.map
