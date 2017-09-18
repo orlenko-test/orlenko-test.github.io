@@ -79,10 +79,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "row"
   }, [_c('div', {
     staticClass: "col-xs-12"
-  }, [_c('div', {
-    staticClass: "item"
-  }, [_vm._m(0), _vm._v(" "), _vm._l((_vm.items), function(item, index) {
+  }, _vm._l((_vm.items), function(item, index) {
     return _c('div', {
+      staticClass: "item"
+    }, [(index === 0) ? _c('div', {
+      staticClass: "row location"
+    }, [_vm._m(0, true), _vm._v(" "), _vm._m(1, true)]) : _vm._e(), _vm._v(" "), _c('div', {
       staticClass: "row flex-align type"
     }, [_c('div', {
       staticClass: "col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-10"
@@ -336,8 +338,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       attrs: {
         "id": "basic-addon2"
       }
-    }, [_vm._v("Kg")])])])])]) : _vm._e()])
-  })], 2)]), _vm._v(" "), _c('div', {
+    }, [_vm._v("Kg")])])])])]) : _vm._e()])])
+  })), _vm._v(" "), _c('div', {
     staticClass: "col-xs-12 controls"
   }, [_c('div', {
     staticClass: "left"
@@ -366,8 +368,6 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "row location"
-  }, [_c('div', {
     staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
   }, [_c('div', {
     staticClass: "input-group mb-10"
@@ -404,7 +404,9 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
       "aria-label": "...",
       "placeholder": "Zip code, Address"
     }
-  })])]), _vm._v(" "), _c('div', {
+  })])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
   }, [_c('div', {
     staticClass: "input-group mb-10"
@@ -441,7 +443,7 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
       "aria-label": "...",
       "placeholder": "Zip code, Address"
     }
-  })])])])
+  })])])
 }]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -613,4 +615,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.b2288683b1f5363e97c9.js.map
+//# sourceMappingURL=app.9d19a216c66ee48d683b.js.map
